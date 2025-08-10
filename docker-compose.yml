@@ -1,0 +1,15 @@
+services:
+  openwebui:
+    image: ghcr.io/open-webui/open-webui:main
+    ports:
+      - 4100:8080
+    volumes:
+      - open-webui:/app/backend/data
+    restart: unless-stopped
+  kokoro-fastapi-cpu:
+    ports:
+      - 4101:8880
+    image: ghcr.io/remsky/kokoro-fastapi-cpu
+    restart: unless-stopped
+volumes:
+  open-webui:
