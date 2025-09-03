@@ -1,6 +1,6 @@
 # LLM Play
 
-A space for playing with local LLMs and related tech (TTS engines, etc)
+A space for playing with local LLMs and related tech (TTS engines, etc).
 
 ## Prereqs
 
@@ -9,6 +9,8 @@ Install Ollama and at least one model. On Mac I've installed the app directly vi
 ## Usage
 
 1. Start with `./up.sh`. This will pull and create the containers and print the web URLs for connecting via the browser. When the Open WebUI container is started it should find and connect to Ollama automatically.
+
+- Use the `reset-password.sh` script to reset WebUI password if necessary
 
 2. On first boot, connect Open WebUI with the Kokoro TTS container as follows:
 
